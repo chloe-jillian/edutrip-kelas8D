@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Agama</title>
+  <title>English</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
@@ -12,48 +12,44 @@
       color: #333;
       margin: 0;
       padding: 0;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
-      flex-direction: row;
-      align-items: stretch;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
     }
 
     .image-container {
-      flex: 1;
       display: flex;
-      align-items: center;
       justify-content: center;
-      padding: 20px;
+      align-items: center;
+      flex-direction: column;
+      padding: 40px 20px 20px;
+      width: 100%;
     }
 
     .image-container img {
-      max-width: 100%;
+      max-width: 90%;
       height: auto;
       border-radius: 16px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
+    h1 {
+      color: #5e60ce;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
     .content {
-      flex: 2;
-      padding: 40px;
+      width: 100%;
+      max-width: 1000px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-    }
-
-    h1 {
-      color: #5e60ce;
-      font-size: 2.5rem;
-      margin-bottom: 10px;
-    }
-
-    p {
-      max-width: 600px;
-      font-size: 1.1rem;
-      margin-bottom: 30px;
-      padding: 0 20px;
     }
 
     table {
@@ -103,35 +99,11 @@
 </head>
 <body>
   <div class="image-container">
-    <img src="gereja maria.jpg" alt="Gereja Image Placeholder">
+    <h1>This is the English page</h1>
+    <img src="mind map.PNG" alt="mindmap">
   </div>
 
   <div class="content">
-    <h1>This is the Agama page</h1>
-
-    <table>
-      <tr>
-        <th>Number</th>
-        <th>Question</th>
-        <th>Answer</th>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Amatilah bangunan gereja yang kamu kunjungi, apakah keunikan gereja tersebut?</td>
-        <td>Gereja ini memiliki sumur di dalam gereja</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Ceritakanlah sejarah yang ada di gereja yang kamu kunjungi!</td>
-        <td>Gereja ini berdiri di tahun 1954, dan kini memiliki 3200 umat</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Perbedaan apa yang kamu temukan di gereja yang kamu kunjungi dibanding gereja di Laurensius?</td>
-        <td>Gereja ini lebih terbuka dan tua, sedangkan gereja Laurensius tertutup dan modern</td>
-      </tr>
-    </table>
-
     <div class="nav-tabs">
       <a href="index.html">← Home</a>
       <a href="agama.html">Agama</a>

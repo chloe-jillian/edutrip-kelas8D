@@ -1,51 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bar Navigasi</title>
-
-    <style> 
-        body {
-          font-family: Arial, Helvetica, sans-serif;
-          margin: 0;
-          padding: 0;
-          background-color: darkolivegreen;
-        }
-    header {
-          background-color: gray;
-          padding: 10px 0;
-          text-align: center;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome </title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    header a {
-         color: white;
-         text-decoration: none;
-         margin: 0 15px;
-         font-size: 18px;
-         transition: color 0.3s ease;
+    body {
+      font-family: 'Nunito', sans-serif;
+      background: linear-gradient(135deg, #fdfbfb 0%, #f1f0ff 25%, #e0f7fa 50%, #ffe5ec 75%, #fdfbfb 100%);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      padding: 20px;
     }
 
-    header a:hover {
-        color: whitesmoke;
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
     }
 
     h1 {
-        text-align: center;
-        margin-top: 50px;
-        font-size: 36px;
-        color: black;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #5e60ce;
     }
-    </style>
+
+    .nav-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      width: 100%;
+      max-width: 300px;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: #ffffffcc;
+      border: 1px solid #e0e0e0;
+      border-radius: 999px;
+      padding: 12px 20px;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #5e60ce;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      transition: background 0.3s ease, transform 0.2s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    a:hover {
+      background-color: #ecebff;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <a href="index.html">Home</a>
-        <a href="agama.html">Agama</a>
-        <a href="ppkn.html">PPKN</a>
-        <a href="Bindo.html">Bindo</a>
-    </header>
 
-    <h1>Ini adalah halaman Home</h1>
-</body>
-</html>
+  <h1>Welcome</h1>
+  
+  <div class="nav-container">
+    <a href="agama.html">Agama</a>
+    <a href="ppkn.html">PPKN</a>
+    <a href="bahasa_indonesia.html">Bahasa Indonesia</a>
+    <a href="inggris.html">Inggris</a>
+    <a href="ips.html">IPS</a>
+    <a href="mandarin.html">Mandarin</a>
+  </div>
+
+
